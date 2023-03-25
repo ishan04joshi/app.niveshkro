@@ -10,6 +10,6 @@
 
 // !! DEVELOPMENT
 
-export const websiteURL = "http://localhost:3001";
-export const dashboardURL = "http://localhost:3000";
-export const backendURL = "http://localhost:8012";
+export const websiteURL = "https://nivesh-landing-new.netlify.app/";
+export const dashboardURL = "https://app-niveshkro-new.netlify.app/";
+export const backendURL = "https://api.staging.niveshkro.com";
