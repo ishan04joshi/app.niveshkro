@@ -104,7 +104,7 @@ export default function JoinOurTeam() {
         phone,
         phoneOtp,
         email,
-        emailOtp
+        emailOtp,
       );
       if (data.status) {
         toast({
@@ -136,8 +136,7 @@ export default function JoinOurTeam() {
       toast({
         title: "Error",
         description:
-          "Something Went Wrong! Please Contact Administrator. " +
-          error.message,
+         error?.message || error?.data?.message ||  "Something Went Wrong! Please Contact Administrator. ",
         status: "error",
         duration: 4000,
         isClosable: true,
@@ -145,7 +144,6 @@ export default function JoinOurTeam() {
       });
     }
   };
-
   return (
     <>
       <Header />
@@ -161,6 +159,7 @@ export default function JoinOurTeam() {
             <Heading
               lineHeight={1.1}
               fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
+              zIndex={1}
             >
               Join the World{" "}
               <Text
@@ -439,6 +438,7 @@ export default function JoinOurTeam() {
           position={"absolute"}
           top={-10}
           left={-10}
+          zIndex={-1}
           style={{ filter: "blur(70px)" }}
         />
       </Box>

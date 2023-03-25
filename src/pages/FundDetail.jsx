@@ -672,7 +672,7 @@ const FundDetail = () => {
             overflow="hidden"
           >
             <Heading fontSize={"2xl"} color="gray.600">
-              Weightings of Fund
+             Weightage of Fund
             </Heading>
             <Stack direction="row" spacing={2} justifyContent="space-around">
               <PieChart width={150} height={150}>

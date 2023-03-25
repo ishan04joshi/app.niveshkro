@@ -374,29 +374,25 @@ export default function Swibc() {
               >
                 Changelog
               </NavItem>
-              {/* <NavItem
-              icon={BsGearFill}
-              color={useColorModeValue("gray.100", "gray.300")}
-            >
-              Settings
-            </NavItem> */}
+              {}
             </>
           )}
         </Flex>
       </Stack>
-      <Stack spacing={1} pt={4}>
+      <Stack spacing={1} pt={5}>
         <Button
           variant="outline"
           w="fit-content"
           alignSelf="center"
           rightIcon={<MdLogout />}
-          color="whitesmoke"
+          color="white"
           _hover={{
+            color: "blue.900",
             bg: "red.500",
           }}
           onClick={handleLogout}
         >
-          Sign out
+          Sign Out
         </Button>
       </Stack>
     </Box>
@@ -459,12 +455,7 @@ export default function Swibc() {
               size="sm"
               sx={{ alignSelf: "center" }}
             />
-            {/* <InputGroup w="96" display={{ base: "none", md: "flex" }}>
-              <InputLeftElement color="gray.500">
-                <FiSearch />
-              </InputLeftElement>
-              <Input placeholder="Search for articles..." />
-            </InputGroup> */}
+            {}
           </Stack>
 
           <Flex align="center" gap="1">
@@ -529,9 +520,6 @@ export default function Swibc() {
                           direction="row"
                           justifyContent={"space-between"}
                           spacing={3}
-                          // _hover={{
-                          //   bg: useColorModeValue("gray.100", "gray.800"),
-                          // }}
                         >
                           <Stack spacing={3} direction="row">
                             <HiExclamationCircle
@@ -619,28 +607,21 @@ export default function Swibc() {
                 </PopoverFooter>
               </PopoverContent>
             </Popover>
-            {/* <IconButton
-              size="md"
-              fontSize="lg"
-              aria-label={`Switch to ${text} mode`}
-              variant="ghost"
-              color="current"
-              ml={{ base: "0", md: "3" }}
-              onClick={toggleMode}
-              icon={<SwitchIcon />}
-            /> */}
+            {}
           </Flex>
         </Flex>
 
         <Box as="main" p="1">
           {/* Add content here, remove div below  */}
           <Box
-            // borderWidth="4px"
-            // borderStyle="dashed"
             rounded="md"
             p="2"
           >
-            {/* {!user?.verified && <Unverified />} */}
+            {
+            /* 
+            {!user?.verified && <Unverified />}
+             */
+             }
             <Outlet />
           </Box>
         </Box>

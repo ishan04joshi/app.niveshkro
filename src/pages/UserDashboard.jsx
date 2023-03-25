@@ -243,7 +243,6 @@ function UserDashboard() {
         </Table>
       </TableContainer>
       <Box pt={12}>
-        <Footer />
       </Box>
     </Stack>
   );

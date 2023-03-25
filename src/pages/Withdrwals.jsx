@@ -338,7 +338,7 @@ const Withdrawals = () => {
       }}
     >
       <Stack direction="row" justifyContent={"space-between"}>
-        <Heading color="gray.600">Withdrawals</Heading>
+        <Heading color="gray.600">Add Withdrawal</Heading>
         {!user?.isAdmin && (
           <Button colorScheme={"blue"} onClick={onOpen}>
             Request New Statement
@@ -361,7 +361,7 @@ const Withdrawals = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Add Withdrawal</ModalHeader>
+          <ModalHeader>Withdrawal Request</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Stack spacing={{ base: 6, md: 10 }}>
@@ -370,7 +370,7 @@ const Withdrawals = () => {
                 <Select
                   value={fundId}
                   onChange={(e) => setFundId(e.target.value)}
-                  placeholder="Select a fund"
+                  placeholder="Select a Fund"
                 >
                   {user?.funds?.map((fund) => {
                     return (
@@ -384,7 +384,6 @@ const Withdrawals = () => {
               <Stack spacing={1}>
                 <Text color="gray.700">Amount to Withdraw:</Text>
                 <Input
-                  value={amount}
                   placeholder="Enter Amount"
                   required
                   type="number"
@@ -410,7 +409,11 @@ const Withdrawals = () => {
                   isLoading={loading}
                 >
                   Close
-                </Button>
+                </Button>            
+              </Stack>
+              <Stack spacing={1}>
+                <Text color="gray.700" fontSize="0.7rem">(Charges may applicable). (After approval of withdrawal request, it will take up to 3-4
+working days to credit the amount in your Bank account).</Text>
               </Stack>
             </Stack>
           </ModalBody>
