@@ -12,4 +12,4 @@
 
 export const websiteURL = "https://nivesh-landing-new.netlify.app/";
 export const dashboardURL = "https://app-niveshkro-new.netlify.app/";
-export const backendURL = "https://api.staging.niveshkro.com";
+export const backendURL = "http://localhost:8012";
